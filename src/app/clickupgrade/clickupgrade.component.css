@@ -1,0 +1,21 @@
+div.cursor {
+    margin-top: 10px;
+    background-color: #3277a694;
+    padding:5px;
+    border-radius: 10px;
+}
+div.cursor * {
+    margin:auto;
+}
+img {
+    max-height: 100px;
+    padding-right: 10px;
+}
+div.buttons {
+    display: flex;
+    flex-direction: column;
+}
+div.buttons *{
+    width: 100%;
+    margin-top: 5px;
+}

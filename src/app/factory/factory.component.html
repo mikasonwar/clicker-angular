@@ -1,0 +1,20 @@
+<div class="factory row">
+  <div class="col-md-2">
+    <img src="/assets/{{image}}" />
+    <span *ngIf="owned!=0">
+      x{{owned}}
+    </span>
+  </div>
+  <div class="col-md-6">{{description}}</div>
+  <div class="col-md-2">
+    <span *ngIf="owned>0">
+      Upgrade level: {{upgrade_level}}
+    </span>
+  </div>
+  <div class="col-md-2">
+    <div class="buttons">
+      <button role="button" class="btn btn-sm btn-primary" (click)="buy()" >Buy ({{price}})</button>
+      <button *ngIf="owned>0" role="button" class="btn btn-sm btn-primary" (click)="upgrade()">Upgrade  ({{upgrade_price}})</button>
+    </div>
+  </div>
+</div>

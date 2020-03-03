@@ -1,0 +1,9 @@
+<div class="row app">
+    <div class="col-md-3 clicker">
+      <app-clicker></app-clicker>
+    </div>
+    <div class="col-md-9 stats">
+      <app-clickupgrade></app-clickupgrade>
+      <app-factory *ngFor="let factory of factories" [configuration]="factory"></app-factory>
+    </div>
+</div>
